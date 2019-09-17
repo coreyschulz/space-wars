@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{745AAB55-06D7-49AF-8BFA-0FB772B0416A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Resources</RootNamespace>
+    <AssemblyName>Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\MySqlCommand.xml" />
+    <Content Include="docs\MySqlCommandBuilder.xml" />
+    <Content Include="docs\MySqlConnection.xml" />
+    <Content Include="docs\MySqlConnectionStringBuilder.xml" />
+    <Content Include="docs\MySqlDataAdapter.xml" />
+    <Content Include="docs\MySqlDataReader.xml" />
+    <Content Include="docs\MySqlException.xml" />
+    <Content Include="docs\MySqlHelper.xml" />
+    <Content Include="docs\MySqlParameter.xml" />
+    <Content Include="docs\MySqlParameterCollection.xml" />
+    <Content Include="docs\MySqlTransaction.xml" />
+    <Content Include="Images\lifebar-0.png" />
+    <Content Include="Images\lifebar-1.png" />
+    <Content Include="Images\lifebar-2.png" />
+    <Content Include="Images\lifebar-3.png" />
+    <Content Include="Images\lifebar-4.png" />
+    <Content Include="Images\lifebar-5.png" />
+    <Content Include="Images\ship-coast-blue.png" />
+    <Content Include="Images\ship-coast-brown.png" />
+    <Content Include="Images\ship-coast-green.png" />
+    <Content Include="Images\ship-coast-grey.png" />
+    <Content Include="Images\ship-coast-red.png" />
+    <Content Include="Images\ship-coast-violet.png" />
+    <Content Include="Images\ship-coast-white.png" />
+    <Content Include="Images\ship-coast-yellow.png" />
+    <Content Include="Images\ship-thrust-blue.png" />
+    <Content Include="Images\ship-thrust-brown.png" />
+    <Content Include="Images\ship-thrust-green.png" />
+    <Content Include="Images\ship-thrust-grey.png" />
+    <Content Include="Images\ship-thrust-red.png" />
+    <Content Include="Images\ship-thrust-violet.png" />
+    <Content Include="Images\ship-thrust-white.png" />
+    <Content Include="Images\ship-thrust-yellow.png" />
+    <Content Include="Images\shot-blue.png" />
+    <Content Include="Images\shot-brown.png" />
+    <Content Include="Images\shot-green.png" />
+    <Content Include="Images\shot-grey.png" />
+    <Content Include="Images\shot-red.png" />
+    <Content Include="Images\shot-violet.png" />
+    <Content Include="Images\shot-white.png" />
+    <Content Include="Images\shot-yellow.png" />
+    <Content Include="Images\sky-space-dark-galaxy.jpg" />
+    <Content Include="Images\star.jpg" />
+    <Content Include="README - Client.txt" />
+    <Content Include="README - Server.txt" />
+    <Content Include="settings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.5\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

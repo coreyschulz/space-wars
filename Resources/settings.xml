@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+
+<SpaceSettings>
+
+  <hitPoints>5</hitPoints>
+
+  <projectileSpeed>10</projectileSpeed>
+
+  <engineStrength>.08</engineStrength>
+
+  <turningRate>2</turningRate>
+
+  <shipSize>20</shipSize>
+  
+  <starSize>35</starSize>
+  
+  <universeSize>750</universeSize>
+  
+  <timePerFrame>16</timePerFrame>
+  
+  <projectileFiringDelay>15</projectileFiringDelay>
+  
+  <respawnDelay>300</respawnDelay>
+
+  <!-- Make the game into a bullethell with bullet wraparound! -->
+  <touhouMode>false</touhouMode>
+  
+  <!-- Adds extra realism to the game with star gravity acting on projectiles! -->
+  <bulletGravity>false</bulletGravity>
+
+  <!-- Increases the sun's mass when it's shot with a bullet! -->
+  <supermassiveMode>false</supermassiveMode>
+
+  <!-- We can add other stars too (or none) <Star> <x>100</x> <y>100</y> <mass>0.005</mass> </Star> -->
+ <Star>
+
+    <x>0</x>
+
+    <y>0</y>
+
+    <mass>0.01</mass>
+
+  </Star>
+
+
+
+</SpaceSettings>

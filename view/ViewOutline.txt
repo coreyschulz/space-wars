@@ -1,0 +1,23 @@
+﻿The "View" project will create the player's "view" (i.e., the GUI) for the game. This class should (1) use the world model above to draw the objects in the game and the scoreboard, (2) draw the GUI controls, such as menu items and buttons, (3) handle user input. If you desire, user input could also be separated in to a Controller project.
+
+Your GUI should provide at minimum the same functionality as the sample client (i.e., providing a way for the user to provide a name, server address, displaying the scene, showing the scoreboard, etc).
+
+You are allowed to (and encouraged to) add extra features to your GUI, but note that you are not (at this point) allowed to change the game play mechanics as defined by the server.
+
+Minimum Requirements:
+
+Allow a player to declare a name and choose a server by IP address or name.
+
+Provide a way to display connection errors and to retry connecting.
+
+Command requests - send a request to the server asking to turn, accelerate, or fire. See details in the Protocol section below.
+
+Draw the scene, including the ships, projectiles, stars and showing a scoreboard. The first 8 players (at least) should be drawn with a unique color or graphic that identifies that player. Beyond 8 players, you can reuse existing graphics or colors. The scoreboard should contain the name and score of each player.
+
+Full credit will include polish and attention to detail, such as sorting the scoreboard by score.
+
+Your GUI should be able to keep up with the server and draw frames as fast as the server sends new information about the world.
+
+Follow the defined communication sequence and protocol (see below).
+
+You do not need to use the same images that the sample client uses to represent objects. You can use your own images, or draw objects composed of simple shapes or lines. The objects must have some "artistic" value, and can't simply be squares and circles. A ship should be clearly identifiable as a ship, and a projectile should be clearly a projectile, etc...
